@@ -80,6 +80,7 @@ func cleanErrorMessage(msg string) string {
 		string(of.ParseErrorCode),
 		string(of.TypeMismatchCode),
 		string(of.TargetingKeyMissingCode),
+		string(of.InvalidContextCode),
 		string(of.GeneralCode),
 	}, "|")
 	re := regexp.MustCompile("(?:" + codeRegex + "): (.*)")
